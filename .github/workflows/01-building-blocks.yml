@@ -12,7 +12,7 @@ jobs:
         steps:
             - name: failed step
               run: |
-                echo "this will fail"
-                exit 1
+                echo "this will succeed"
+                exit 0
             - name: say cia
               run: echo "cia"
