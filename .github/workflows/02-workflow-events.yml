@@ -1,0 +1,9 @@
+name: Workflow Events
+on: push
+
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "I run on..."
+              run: echo "workflow _ ${{github.event_name}}"
